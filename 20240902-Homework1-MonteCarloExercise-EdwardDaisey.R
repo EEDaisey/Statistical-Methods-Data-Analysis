@@ -28,7 +28,7 @@
 # Reproducibility: (0) Open R-Studio.
 #                  (1) Change NUM_SIMULATIONS & MAX_DICE to desired values.
 #                  (2) Make sure you have constants & functions operational.
-#                  (3) Run main() at the bottom of this code.
+#                  (3) Run Main() at the bottom of this code.
 #
 # References:      None.
 # ##############################################################################
