@@ -49,8 +49,8 @@ DICE_SIDES <- 6              # A fair six sided dice was used.
 #  Function Input:  number_dice_* - the number of dice the defender (or attacker)
 #                   decides to use during the battle.
 # Function Output:  Whether the attacker wins the engagement or not.
-simulate_and_calculate_probability <- function( number_dice_defender, number_dice_attacker ) {
-  simulate_engagement <- function() {
+SimulateAndCalculateProbability <- function( number_dice_defender, number_dice_attacker ) {
+  SimulateEngagement <- function() {
     # n x Six Sided Die Used By The Defender. n = 1. Numbers are allowed to repeat, i.e., replace = TRUE. 
     defender_rolls <- sample( 1:DICE_SIDES, number_dice_defender, replace = TRUE )
     # n x Six Sided Die Used By The Attacker. n = 3. Numbers are allowed to repeat, i.e., replace = TRUE. 
@@ -70,7 +70,7 @@ simulate_and_calculate_probability <- function( number_dice_defender, number_dic
   stdout <- sprintf("1 = Attacker Won Engagement | 0 = Attacker Lost Engagement\n\n ")
   cat( stdout )
   
-  monte_carlo_results <- replicate( NUM_SIMULATIONS, simulate_engagement() )
+  monte_carlo_results <- replicate( NUM_SIMULATIONS, SimulateEngagement() )
   stdout <- sprintf( "Result From Engagement: %.3g\n", monte_carlo_results )
   cat( stdout )
   
@@ -87,10 +87,10 @@ simulate_and_calculate_probability <- function( number_dice_defender, number_dic
 #                   defender,and calculates the probability of winning.
 #  Function Input:  MIN_DICE and MAX_DICE.
 # Function Output:  Performs simulation and calculates the probability.
-main <- function() {
+Main <- function() {
   number_dice_defender <- MIN_DICE
   number_dice_attacker <- MAX_DICE
-  simulate_and_calculate_probability( number_dice_defender, number_dice_attacker )
+  SimulateAndCalculateProbability( number_dice_defender, number_dice_attacker )
 } 
-main()
+Main()
 # ##########################################################################
