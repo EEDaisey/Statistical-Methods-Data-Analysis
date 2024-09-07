@@ -19,7 +19,7 @@
 #
 # Note: The numbers above represent the probabilities of the attacker winning
 # based on different Monte Carlo (MC) runs in a game of Risk. The attacker is
-# assumed to have three dice while defender is assumed to have one dice.
+# assumed to have three dice while the defender is assumed to have one dice.
 # "# of Dice" above indicates the number of dice the attacker rolls.
 #
 # Using a larger number of MC runs generally leads to more reliable and
@@ -51,9 +51,9 @@ DICE_SIDES <- 6              # A fair six sided dice was used.
 # Function Output:  Whether the attacker wins the engagement or not.
 simulate_and_calculate_probability <- function( number_dice_defender, number_dice_attacker ) {
   simulate_engagement <- function() {
-    # n x Six Sided Die Used By The Defender. n = 1. Numbers are allowed to repeat, i.e., replace <- TRUE. 
+    # n x Six Sided Die Used By The Defender. n = 1. Numbers are allowed to repeat, i.e., replace = TRUE. 
     defender_rolls <- sample( 1:DICE_SIDES, number_dice_defender, replace = TRUE )
-    # n x Six Sided Die Used By The Attacker. n = 3. Numbers are allowed to repeat, i.e., replace <- TRUE. 
+    # n x Six Sided Die Used By The Attacker. n = 3. Numbers are allowed to repeat, i.e., replace = TRUE. 
     attacker_rolls <- sample( 1:DICE_SIDES, number_dice_attacker, replace = TRUE )
     # Note: The sample function in R is used for random sampling from the sample space.
   
@@ -85,8 +85,8 @@ simulate_and_calculate_probability <- function( number_dice_defender, number_dic
 #    Function Name: main
 # Function Purpose: Simulates an engagement between the attacker and the 
 #                   defender,and calculates the probability of winning.
-#  Function Input:  None.
-# Function Output:  None.
+#  Function Input:  MIN_DICE and MAX_DICE.
+# Function Output:  Performs simulation and calculates the probability.
 main <- function() {
   number_dice_defender <- MIN_DICE
   number_dice_attacker <- MAX_DICE
