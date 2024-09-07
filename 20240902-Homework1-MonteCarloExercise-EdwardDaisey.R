@@ -3,7 +3,7 @@
 #     Class:  Statistical Methods & Data Analysis
 # Professor:  Dr. Barry Brodt
 #      Date:  2nd of September, 2024
-#     Title:  Homework 1
+#     Title:  Homework 1 - Risk Simulation
 # ##############################################################################
 
 
