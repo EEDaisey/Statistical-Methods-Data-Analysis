@@ -3,7 +3,7 @@
 # Class: Statistical Methods & Data Analysis
 # Professor: Dr. Barry Bodt
 # Date: 9th of September, 2024
-# Title: Homework 2 - World Series Simulation
+# Title: Assignment 2 - World Series Simulation
 # #############################################################################
 
 
