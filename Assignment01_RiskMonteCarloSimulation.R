@@ -1,9 +1,9 @@
 # ##############################################################################
-#    Author:  Edward E. Daisey
-#     Class:  Statistical Methods & Data Analysis
+# Author:  Edward E. Daisey
+# Class:  Statistical Methods & Data Analysis
 # Professor:  Dr. Barry Brodt
-#      Date:  2nd of September, 2024
-#     Title:  Assignment 01 - Risk Simulation
+# Date:  2nd of September, 2024
+# Title:  Assignment 01 - Risk Simulation
 # ##############################################################################
 
 
