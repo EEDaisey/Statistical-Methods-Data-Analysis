@@ -2,7 +2,7 @@
 # Author: Edward E. Daisey
 # Class: Statistical Methods & Data Analysis
 # Professor: Dr. Barry Bodt
-# Date: Assignment 7
+# Date: 14th of October, 2024
 # Title: Assignment 7 - Monte Carlo Simulation of Means & Variances
 # ##############################################################################
 
