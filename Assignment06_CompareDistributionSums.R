@@ -43,6 +43,7 @@ xlab = "Sum of 3 iid Exponential(1/4)",
 ylab = "Exponential(1/4)",
 pch = 20)
 abline( 0, 1 )
+
 # Furthermore, a histogram can be created and ... can be replaced with:
 # poisson: Vector containing sums of three random deviates (1000).
 # poisson_sum: 1000 random deviates for direct sum.
