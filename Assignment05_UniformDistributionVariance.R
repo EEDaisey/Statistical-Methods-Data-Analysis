@@ -11,7 +11,7 @@
 n <- 3 # Number of Samples
 trials <- 1000 # Number of Trials
 ranges <- numeric( trials ) # Vector to store the range values from each trial.
-# ##########################################################################
+# ##############################################################################
 
 
 # ########################### Uniform Generator Function #######################
@@ -22,7 +22,7 @@ ranges <- numeric( trials ) # Vector to store the range values from each trial.
 UniformGenerator <- function( n ) {
 return( sample( seq( 0, 1, by = 0.001 ), n, replace = TRUE ) )
 }
-# ##########################################################################
+# ##############################################################################
 
 
 # ############################ Main Simulation Loop ############################
