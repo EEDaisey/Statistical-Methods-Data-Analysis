@@ -1,3 +1,5 @@
+# Note: Not the author of this function. Leaving here for future reference.
+
 funct <- function(x) { dnorm(x,-2,1) * 1/3 + dnorm(x,2,1) * 2/3 }
 
 # Desired number of samples:
