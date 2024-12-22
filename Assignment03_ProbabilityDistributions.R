@@ -3,7 +3,7 @@
 # Class: Statistical Methods & Data Analysis
 # Professor: Dr. Barry Bodt
 # Date: 16th of September, 2024
-# Title: Assignment 3
+# Title: Assignment 3 - Probability Distribution
 # ##############################################################################
 
 
