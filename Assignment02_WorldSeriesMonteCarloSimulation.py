@@ -102,7 +102,7 @@ P_TEAM_A_WINS = 0.75 # Probability of Team A winning a single game.
 # Function Input: Probability that Team A wins a single game.
 # Function Output: Boolean value capturing whether Team A won or lost the game.
 def SimulateBaseballGame( P_TEAM_A_WINS ):
-return random.random() < P_TEAM_A_WINS
+       return random.random() < P_TEAM_A_WINS
 # #############################################################################
 
 
@@ -114,22 +114,22 @@ return random.random() < P_TEAM_A_WINS
 # Function Output: Integer value indicating whether Team A won the
 # series (1) or lost (0).
 def SimulateWorldSeries( P_TEAM_A_WINS, MAX_GAMES ):
-# Count of the number of wins associated with both teams.
-team_a_wins = 0
-team_b_wins = 0
-for _ in range( MAX_GAMES ):
-if SimulateBaseballGame( P_TEAM_A_WINS ):
-team_a_wins += 1
-else:
-team_b_wins += 1
-# Check if the team has won four games.
-if team_a_wins == 4:
-print( f"Team A wins the series!" )
-return 1 # Team A wins the series!
-if team_b_wins == 4:
-print( f"Team B wins the series!\n" +
-       f" Al Michaels' shouts: 'Do you believe in miracles!'" )
-return 0 # Team B wins the series!
+       # Count of the number of wins associated with both teams.
+       team_a_wins = 0
+       team_b_wins = 0
+       for _ in range( MAX_GAMES ):
+              if SimulateBaseballGame( P_TEAM_A_WINS ):
+                     team_a_wins += 1
+              else:
+                     team_b_wins += 1
+              # Check if the team has won four games.
+              if team_a_wins == 4:
+                     print( f"Team A wins the series!" )
+                     return 1 # Team A wins the series!
+              if team_b_wins == 4:
+                     print( f"Team B wins the series!\n" +
+                            f" Al Michaels' shouts: 'Do you believe in miracles!'" )
+                     return 0 # Team B wins the series!
 # #############################################################################
 
 
@@ -142,9 +142,9 @@ return 0 # Team B wins the series!
 # Function Output: Float value representing the probability that Team A
 # wins the World Series.
 def CalculateProbabilityWinning( P_TEAM_A_WINS, NUM_SIMULATIONS ):
-wins = sum( SimulateWorldSeries( P_TEAM_A_WINS, MAX_GAMES ) for _ in
-range( NUM_SIMULATIONS ) )
-return wins / NUM_SIMULATIONS
+       wins = sum( SimulateWorldSeries( P_TEAM_A_WINS, MAX_GAMES ) for _ in
+       range( NUM_SIMULATIONS ) )
+       return wins / NUM_SIMULATIONS
 # #############################################################################
 
 
@@ -155,8 +155,8 @@ return wins / NUM_SIMULATIONS
 # Function Input: P_TEAM_A_WINS and NUM_SIMULATIONS.
 # Function Output: Performs simulation and calculates the probability of winning.
 def Main():
-probability = CalculateProbabilityWinning( P_TEAM_A_WINS, NUM_SIMULATIONS )
-print( f"\nProbability that Team A wins the World Series: {probability:.4f}" )
+       probability = CalculateProbabilityWinning( P_TEAM_A_WINS, NUM_SIMULATIONS )
+       print( f"\nProbability that Team A wins the World Series: {probability:.4f}" )
 if __name__ == "__main__":
-Main()
+       Main()
 # ###########################################################################
