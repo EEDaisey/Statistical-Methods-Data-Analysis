@@ -97,21 +97,21 @@ P_TEAM_A_WINS = 0.75 # Probability of Team A winning a single game.
 
 
 # ############################## Function 1 ###################################
-# Function Name: SimulateBaseballGame
-# Function Purpose: Simulates a single baseball game.
-# Function Input: Probability that Team A wins a single game.
-# Function Output: Boolean value capturing whether Team A won or lost the game.
+# Name: SimulateBaseballGame
+# Purpose: Simulates a single baseball game.
+# Input: Probability that Team A wins a single game.
+# Output: Boolean value capturing whether Team A won or lost the game.
 def SimulateBaseballGame( P_TEAM_A_WINS ):
        return random.random() < P_TEAM_A_WINS
 # #############################################################################
 
 
 # ############################## Function 2 ###################################
-# Function Name: SimulateWorldSeries
-# Function Purpose: Simulates the World Series between Team A and Team B.
-# Function Input: Probability that Team A wins a single game.
+# Name: SimulateWorldSeries
+# Purpose: Simulates the World Series between Team A and Team B.
+# Input: Probability that Team A wins a single game.
 # Maximum number of games in the World Series.
-# Function Output: Integer value indicating whether Team A won the
+# Output: Integer value indicating whether Team A won the
 # series (1) or lost (0).
 def SimulateWorldSeries( P_TEAM_A_WINS, MAX_GAMES ):
        # Count of the number of wins associated with both teams.
@@ -134,12 +134,12 @@ def SimulateWorldSeries( P_TEAM_A_WINS, MAX_GAMES ):
 
 
 # ############################## Function 3 ###################################
-# Function Name: CalculateProbabilityWinning
-# Function Purpose: The probability that Team A wins the World series
+# Name: CalculateProbabilityWinning
+# Purpose: The probability that Team A wins the World series
 # based on multiple simulations is calculated.
-# Function Input: Probability that Team A wins a single baseball game.
+# Input: Probability that Team A wins a single baseball game.
 # The number of simulations to run for the analysis.
-# Function Output: Float value representing the probability that Team A
+# Output: Float value representing the probability that Team A
 # wins the World Series.
 def CalculateProbabilityWinning( P_TEAM_A_WINS, NUM_SIMULATIONS ):
        wins = sum( SimulateWorldSeries( P_TEAM_A_WINS, MAX_GAMES ) for _ in
@@ -149,11 +149,11 @@ def CalculateProbabilityWinning( P_TEAM_A_WINS, NUM_SIMULATIONS ):
 
 
 # ############################## Function 4 ###################################
-# Function Name: Main
-# Function Purpose: The simulation is executed and the probability of Team A
+# Name: Main
+# Purpose: The simulation is executed and the probability of Team A
 # winning the World Series is printed.
-# Function Input: P_TEAM_A_WINS and NUM_SIMULATIONS.
-# Function Output: Performs simulation and calculates the probability of winning.
+# Input: P_TEAM_A_WINS and NUM_SIMULATIONS.
+# Output: Performs simulation and calculates the probability of winning.
 def Main():
        probability = CalculateProbabilityWinning( P_TEAM_A_WINS, NUM_SIMULATIONS )
        print( f"\nProbability that Team A wins the World Series: {probability:.4f}" )
