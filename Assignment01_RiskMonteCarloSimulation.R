@@ -43,12 +43,12 @@ DICE_SIDES <- 6              # A fair six sided dice was used.
 
      
 # ############################## Function 1 ################################
-#    Function Name: simulate_and_calculate_probability
-# Function Purpose: Simulates an engagement (roll) between the attacker and the 
+#    Name: simulate_and_calculate_probability
+# Purpose: Simulates an engagement (roll) between the attacker and the 
 #                   defender.  The probability of winning is calculated & printed.
-#  Function Input:  number_dice_* - the number of dice the defender (or attacker)
+#  Input:  number_dice_* - the number of dice the defender (or attacker)
 #                   decides to use during the battle.
-# Function Output:  Whether the attacker wins the engagement or not.
+# Output:  Whether the attacker wins the engagement or not.
 SimulateAndCalculateProbability <- function( number_dice_defender, number_dice_attacker ) {
   SimulateEngagement <- function() {
     # n x Six Sided Die Used By The Defender. n = 1. Numbers are allowed to repeat, i.e., replace = TRUE. 
@@ -82,11 +82,11 @@ SimulateAndCalculateProbability <- function( number_dice_defender, number_dice_a
      
      
 # ############################## Function 2 ################################
-#    Function Name: main
-# Function Purpose: Simulates an engagement between the attacker and the 
+#    Name: main
+# Purpose: Simulates an engagement between the attacker and the 
 #                   defender,and calculates the probability of winning.
-#  Function Input:  MIN_DICE and MAX_DICE.
-# Function Output:  Performs simulation and calculates the probability.
+#  Input:  MIN_DICE and MAX_DICE.
+# Output:  Performs simulation and calculates the probability.
 Main <- function() {
   number_dice_defender <- MIN_DICE
   number_dice_attacker <- MAX_DICE
@@ -94,3 +94,4 @@ Main <- function() {
 } 
 Main()
 # ##########################################################################
+
