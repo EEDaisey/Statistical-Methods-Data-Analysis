@@ -9,8 +9,7 @@
 
 # ############################ Simulation Parameters ###########################
 sample_number <- 2000 # Number of samples.
-lambda <- 1 # Rate parameter for
-# the exp distributions.
+lambda <- 1 # Rate parameter for the exp distributions.
 # ###############################################################################
 
 
